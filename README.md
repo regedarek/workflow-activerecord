@@ -1,5 +1,5 @@
 [![Version](https://img.shields.io/gem/v/workflow-activerecord.svg)](https://rubygems.org/gems/workflow-activerecord)
-[![Build Status](https://travis-ci.org/geekq/workflow-activerecord.svg)](https://travis-ci.org/geekq/workflow-activerecord)
+[![Test](https://github.com/geekq/workflow-activerecord/actions/workflows/test.yml/badge.svg)](https://github.com/geekq/workflow-activerecord/actions/workflows/test.yml)
 [![Code Climate](https://codeclimate.com/github/geekq/workflow-activerecord/badges/gpa.svg)](https://codeclimate.com/github/geekq/workflow-activerecord)
 [![Test Coverage](https://codeclimate.com/github/geekq/workflow-activerecord/badges/coverage.svg)](https://codeclimate.com/github/geekq/workflow-activerecord/coverage)
 
@@ -9,15 +9,15 @@
 
 Major+minor versions of workflow-activerecord are based on the oldest
 compatible ActiveRecord API. To use [`workflow`][workflow] with
-Rails/ActiveRecord 4.1, 4.2, 5.0, 5.1, 5.2 please use:
+Rails/ActiveRecord 4.1, 4.2, 5.0, 5.1, 5.2, 6.0, 6.1 please use:
 
-    gem 'workflow-activerecord', '>= 4.1', '< 6.0'
+    gem 'workflow-activerecord', '~> 4.1'
 
 This will also automatically include the newest compatible version of
 the core 'workflow' gem. But you can also choose a specific version:
 
     gem 'workflow', '~> 2.0'
-    gem 'workflow-activerecord', '>= 4.1pre', '< 6.0'
+    gem 'workflow-activerecord', '~> 4.1'
 
 Please also have a look at [the sample application][]!
 
@@ -187,6 +187,15 @@ You can have a look at an advanced [`on_transition`][] example in
 
 Changelog
 ---------
+
+### New in the version 4.1.9
+
+* gh-13 Switch CI (continuous integration) from travis-CI to GitHub
+* Tested Rails 7.0 support
+
+### New in the version 4.1.8
+
+* gh-11 Rails 6.1 support
 
 ### New in the version 4.1.7
 

@@ -1,3 +1,3 @@
 module WorkflowActiverecord
-  VERSION = "4.1.7"
+  VERSION = "4.1.9"
 end
